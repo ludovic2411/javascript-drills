@@ -1,0 +1,95 @@
+body{
+  background-color: #800000;
+  color:white;
+}
+.wrapper{
+  width: 60%;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4d0000;
+}
+.wrapper{
+  padding-top: 2vh;
+}
+.choice{
+  margin-top: 5vh;
+}
+.choice ul{
+  margin-left: 8vw;
+}
+.choice li{
+  display: inline-block;
+  margin-right: 2vw;
+  border:solid 0.5vh grey;
+  border-radius: 100%;
+  padding: 4vh;
+}
+.yellow {
+  background-color: yellow;
+
+}
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+}
+.orange{
+  background-color: orange;
+}
+.purple{
+  background-color: purple
+}
+.blue{
+  background-color: blue;
+}
+.actuelle{
+  margin-top: 5vh;
+}
+.actuelle ul{
+  margin-left: 15vw;
+
+}
+.actuelle li{
+  display: inline-block;
+  margin-right: 2vw;
+  border:solid 0.5vh grey;
+  border-radius: 100%;
+  padding: 4vh;
+}
+.historique{
+  margin-top: 5vh;
+}
+.historique ul{
+  margin-left: 15vw;
+
+}
+.historique li{
+  display: inline-block;
+  margin-right: 2vw;
+  border:solid 0.5vh grey;
+  border-radius: 100%;
+  padding: 4vh;
+}
+.essais{
+  margin-top: -11vh;
+  float: right;
+}
+.essais li{
+  display: inline-block;
+  margin-right: 1vw;
+  border:solid 0.25vh grey;
+  border-radius: 100%;
+  padding: 2vh;
+}
+.solution ul{
+  margin-left: 15vw;
+}
+.solution li{
+  display: inline-block;
+  margin-right: 2vw;
+  border:solid 0.5vh grey;
+  border-radius: 100%;
+  padding: 4vh;
+}

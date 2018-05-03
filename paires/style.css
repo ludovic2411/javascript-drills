@@ -1,0 +1,109 @@
+body{
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+/*background-image: linear-gradient(to right, #434343 0%, black 100%);*/
+}
+@keyframes chrono{
+0% {margin-top:0vh;}
+25% {background-color: yellow;}
+50% {background-color: orange;}
+75% {background-color: red;}
+100% {margin-top: 106vh;}
+}
+.wrapper{
+  margin-top: -15vh;
+  display: grid;
+  grid-template-columns: repeat(9,1fr);
+  grid-template-rows: repeat(6,1fr);
+}
+.chrono{
+  width: 25%;
+  grid-column: 1;
+  grid-row:2/7;
+  background-color: green;
+  animation-name: chrono;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.img1{
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 2;
+  grid-row: 2;
+}
+.img2{
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 4;
+  grid-row: 2;
+}
+.img3{
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 6;
+  grid-row: 2;
+}
+.img4{
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 8;
+  grid-row: 2;
+}
+.img5{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 2;
+  grid-row: 4;
+}
+.img6{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 4;
+  grid-row: 4;
+}
+.img7{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 6;
+  grid-row: 4;
+}
+.img8{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 8;
+  grid-row: 4;
+}
+.img9{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 2;
+  grid-row: 6;
+}
+.img10{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 4;
+  grid-row: 6;
+}
+.img11{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 6;
+  grid-row: 6;
+}
+.img12{
+  margin-top: -5vh;
+  border:solid 0.4vh #d1dee3;
+  border-radius: 15%;
+  grid-column: 8;
+  grid-row: 6;
+}
