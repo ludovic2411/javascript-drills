@@ -1,0 +1,63 @@
+[
+  {"aliment":"jus de canneberge",
+    "type":"boisson",
+    "permis":true
+  },
+  {"aliment":"jus d'orange",
+    "type":"boisson",
+    "permis":true
+  },
+  {"aliment":"thé noir",
+    "type":"boisson",
+    "permis":true
+  },
+  {"aliment":"pomme de terre",
+    "type":"féculents",
+    "permis":true
+  },
+  {"aliment":"flocons d'avoine",
+    "type":"féculents",
+    "permis":true
+  },
+  {"aliment":"riz",
+    "type":"féculents",
+    "permis":true
+  },
+  {"aliment":"pâtes blanches",
+    "type":"féculents",
+    "permis": false
+  },
+  {"aliment":"coca",
+    "type":"boisson",
+    "permis":false
+  },
+  {"aliment":"champignons",
+    "type":"autres",
+    "permis":false
+  },
+  {"aliment":"choux",
+    "type":"légumes",
+    "permis":false
+  },
+  {"aliment": "dattes",
+    "type":"fruits",
+    "permis":false
+  },
+  {
+    "aliment": "mangue",
+    "type":"fruits",
+    "permis":false
+  },
+  {"aliment":"poire",
+    "type":"fruits",
+    "permis":false
+  },
+  {"aliment":"kiwi",
+    "type":"fruits",
+    "permis":true
+  },
+  {"aliment":"myrtilles",
+    "type":"fruits",
+    "permis":true
+  }
+]
