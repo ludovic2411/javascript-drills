@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<h1>Compteur de click</h1>
+<button id="augmente">augmentons les clicks</button>
+<button id="diminue">Diminuons les clicks</button>
+<input type="text">
+<script>
+let button_1=$("#augmente");
+let button_2=$("#diminue");
+let click_counter=$("input")[0];
+let click=0;
+button_1.click(function(){
+  click=click+1;
+click_counter.value=click;
+});
+
+button_2.click(function(){
+  click=click-1;
+click_counter.value=click;
+});
+
+</script>
+</body>
+</html>

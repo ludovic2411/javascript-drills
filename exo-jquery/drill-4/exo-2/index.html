@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h1>Calculez votre salaire</h1>
+  <label for="base">salaire de base <input class="base" type="text"></label>
+  <select class="genre" name="genre">
+    <option value="homme">homme</option>
+    <option value="femme">femme</option>
+  </select>
+  <label for="children"> Nombre d'enfants <input class="children" type="text"></label>
+  <button>calculer</button>
+  <p></p>
+<script>
+
+$("button").click("calcul",function(){
+  let salaire=$("input")[0].value;
+  if ($(".genre").val()=="femme"){
+    let charges=(salaire/100)*16;
+    let assurances=(salaire/100)*5;
+    let cotisations=(salaire/100)*3;
+    salaire_total=salaire-charges-assurances-cotisations;
+    $("p")[0].innerHTML="Votre salaire "+salaire_total;
+    console.log("tarif réduit");
+  }else if($(".genre").val()=="homme" && $(".children")[0].value=="3"){
+    let charges=(salaire/100)*17;
+    let assurances=(salaire/100)*6;
+    let cotisations=(salaire/100)*4;
+    salaire_total=salaire-charges-assurances-cotisations;
+    $("p")[0].innerHTML="Votre salaire "+salaire_total;
+    console.log("famille nombreuse ");
+  }else if($(".genre").val()=="femme" && $(".children")[0].value=="3"){
+    let charges=(salaire/100)*15;
+    let assurances=(salaire/100)*4;
+    let cotisations=(salaire/100)*3;
+    salaire_total=salaire-charges-assurances-cotisations;
+    $("p")[0].innerHTML="Votre salaire "+salaire_total;
+    console.log("famille nombreuse et réduit");
+  }
+  else if($(".genre").val()=="femme" && $(".children")[0].value=="4"){
+    let charges=(salaire/100)*14;
+    let assurances=(salaire/100)*3;
+    let cotisations=(salaire/100)*2;
+    salaire_total=salaire-charges-assurances-cotisations;
+    $("p")[0].innerHTML="Votre salaire "+salaire_total;
+    console.log("famille nombreuse et plus réduit");
+  }
+  else{
+    let charges=(salaire/100)*18;
+    let assurances=(salaire/100)*7;
+    let cotisations=(salaire/100)*5;
+    salaire_total=salaire-charges-assurances-cotisations;
+    $("p")[0].innerHTML="Votre salaire "+salaire_total;
+  }
+  console.log($(".children")[0].value);
+  console.log($(".genre").val());
+});
+</script>
+</body>
+</html>

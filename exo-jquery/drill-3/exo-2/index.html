@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<h1>Trouve le bon numéro</h1>
+<button>Deviner</button>
+<input type="text">
+<p>Est-ce correct?</p>
+<p>Tes tentatives:</p>
+<script>
+let button=$("button");
+let text=$("input")[0];
+let initial_text=$("p")[1].innerHTML;
+
+let random_number=Math.floor(Math.random() * 100) + 0;
+tentatives=0;
+
+button.click('guess',function(){
+  if(text.value==random_number){
+    $("p")[0].innerHTML="trouvé!";
+  }
+  else if (text.value>random_number){
+    $("p")[0].innerHTML="trop grand!";
+    tentatives=tentatives+1;
+    $("p")[1].innerHTML=initial_text+tentatives;
+  }
+  else {
+    $("p")[0].innerHTML="trop petit";
+    tentatives=tentatives+1;
+    $("p")[1].innerHTML=initial_text+tentatives;
+  }
+});
+console.log(random_number);
+</script>
+</body>
+</html>

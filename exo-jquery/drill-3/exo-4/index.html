@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+<body>
+<h1>Bouge le carré</h1>
+<section class="square">
+
+</section>
+<section class="form">
+  <form action="#">
+    <input type="text" id="text">
+    <input type="text" id="value">
+  </form>
+</section>
+<script>
+let text=$("#text");
+let value=$("#value")[0];
+let square=$(".square");
+let original_margin_top=144.9;
+let original_margin_left=663.7;
+let original_margin_right=663.7;
+text.keydown("move",function(event){
+  let charcode=event.which;
+   value.value=charcode;
+  switch(charcode){
+    case 38:
+    case 90:
+    original_margin_top=original_margin_top-30;
+    square.css("margin-top",original_margin_top+"px");
+    break;
+    case 40:
+    case 83:
+    original_margin_top=original_margin_top+30;
+    square.css("margin-top",original_margin_top+"px");
+    break;
+    case 37:
+    case 81:
+    original_margin_left=original_margin_left+30;
+    //new_margin_left+30;
+    square.css("margin-right",original_margin_left+"px");
+    break;
+    case 39:
+    case 68:
+    original_margin_right=original_margin_right+30;
+    //new_margin_right+30;
+    square.css("margin-left",original_margin_right+"px");
+    break;
+  }
+});
+
+</script>
+</body>
+</html>
